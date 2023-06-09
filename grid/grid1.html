@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con {
+            background: pink; display: grid; grid-template-columns: auto auto auto auto auto/*to make 3 columns*/;
+            gap: 20px 30px;
+            padding: 20px; border: 2px solid #000;
+        }
+        .box { border: 2px solid black; padding: 50px;}
+        .a { grid-row: 1/6;}
+        .b { grid-column: 2/6;}
+        .c { grid-row: 2/6;}
+        .d { grid-column: 3/6;}
+        .e { grid-column: 5/6; grid-row: 3/6;}
+        .f { grid-column: 3/5; grid-row: 4/5;}
+        .g { grid-row: 5/6; grid-column: 3/5;}
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box a"></div>
+        <div class="box b"></div>
+        <div class="box c"></div>
+        <div class="box d"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box e"></div>
+        <div class="box f"></div>
+        <div class="box g"></div>
+    </div>
+</body>
+</html>

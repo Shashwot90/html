@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con {
+            background: pink; display: grid; grid-template-columns: auto auto auto/*to make 3 columns*/;
+            gap: 20px 30px;
+        }
+        .box { border: 2px solid black; padding: 50px;}
+        .a { grid-column: 1/4;}
+        .b { grid-row: 2/4;}
+        .d { grid-row: 2/4; grid-column: 3;}
+    </style>
+</head>
+<body>
+    <div class="con"> 
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box">C</div>
+        <div class="box d">D</div>
+        <div class="box">E</div>
+        <div class="box a">F</div>
+    </div>
+</body>
+</html>

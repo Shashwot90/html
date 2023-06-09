@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px; height: 100px; background: red; animation-name: mm;
+            animation-duration: 2s; position: absolute; animation-iteration-count: 3;
+            animation-direction: alternate/*both sides*/; 
+            animation-fill-mode: both/*forward decides which color*/;
+            animation-delay: 2s;
+        }
+        @keyframes mm {
+            0% {
+                left: 0; background: green;
+            }
+            100% {
+                left: 500px;
+            }
+        }
+        .a {
+            width: 100px; height: 100px; border: 1px solid #000; animation-name: mmm;
+            animation-duration: 5s; position: relative;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode;*/
+        }
+        @keyframes mmm {
+            0% {left: 0;} 100% { left: 400px;}
+        }
+        .aa { animation-timing-function: linear;}
+        .bb { animation-timing-function: ease;}
+        .cc { animation-timing-function: ease-in;}
+        .dd { animation-timing-function: ease-out;}
+        .ee { animation-timing-function: ease-in-out;}
+        .ff { animation-timing-function: steps(4,start);}
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="a aa">A</div>
+    <div class="a bb">B</div>
+    <div class="a cc">C</div>
+    <div class="a dd">D</div>
+    <div class="a ee">E</div>
+    <div class="a ff">F</div>
+     
+</body>
+</html>

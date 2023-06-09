@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    padding: 20px 0;
+}
+body {
+     font-family: 'Lato', sans-serif;
+}
+p {
+    line-height: 1.7;
+}
+a {
+    text-decoration: none;
+}
+.banner {
+     height: 100vh; 
+     background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../img/4.jpg);
+     background-size: cover;
+      
+
+}
+
+.logo img {
+    width: 110px;
+
+}
+
+.con {
+    max-width: 1200px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none; 
+    position: relative;
+}
+
+nav li {
+    display: inline;
+    position: relative;
+
+}
+nav ul li{
+    padding: 5px;
+    border-radius: 4px;
+    
+
+}
+nav ul li:hover {
+    background: #FFB300;
+    color: #000;
+}
+
+
+nav li ul {
+    position: absolute;
+    top: 130%;
+    left: 0;
+    width: 220px;
+    background: #000;
+    display: none;
+    border-bottom: 2px solid #FFB300;
+    padding: 10px;
+}
+.a {
+    width: 291px;
+}
+.b {
+    width: 180px;
+}
+.d::after {
+    content: '\f0d7';
+    color: #fff;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 5;
+    left: 30;
+}
+nav li ul li {
+    line-height: 30px;
+}
+nav li ul::before {
+    content: '';
+    border: 20px solid;
+    border-color: transparent transparent black transparent;
+    position: absolute;
+    left: 20px;
+    top: -40px;
+
+}
+
+nav li:hover ul {
+    display: block;
+}
+nav li a {
+    color: #fff;
+    padding: 20px;
+    
+}
+ 
+.banner-text {
+    text-align: center;
+    color: #fff;
+
+}
+.banner-text h2 {
+    font-size: 52px;
+    font-weight: bold;
+    padding-top: 210px;
+    font-weight: 600;
+
+}
+.about {
+    text-align: center;
+}
+
+.about-ul {
+    padding: 20px 0 40px;
+}
+
+.about-ul ul li {
+    list-style: none; 
+    position: relative;
+    display: inline;
+}
+.gap-about {
+    display: flex;
+     
+    gap: 62px;
+    align-items: center;
+}
+.about-content{
+    display: inline-block;
+    width: 66%;
+    
+}
+
+.destination {
+    padding: 64px 0;
+    
+}
+.destination h4 {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.flex-des {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.t-box img {
+    width: 100%;
+}
+.t-box {
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+}
+.t-box h4 {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    
+}
+.days {
+    color: #fff;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 20px;
+}
+.info  {
+    color: #fff;
+    background: #000;
+    position: absolute;
+    padding: 60px;
+    width: 95%;
+    height: 290px;
+    text-align: center;
+    z-index: 8;
+    top: 5%;
+    left: 2%;
+    display: none;
+}
+.info p {
+    text-align: center;
+    justify-content: center ;
+    font-weight: 700;
+}
+.info h5 {
+    padding-top: 40px;
+    font-size: 16px;
+
+}
+.info h5::after {
+    content: '\f061';
+    position: absolute;
+    font-family: FontAwesome;
+    color: #fff;
+    left: 58%;
+}
+.info a {
+    color: #fff;
+}
+
+.t-box:hover .info {
+    display: block;
+     
+}
+
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 30px 0;
+}
+.f-box {
+    text-align: center;
+}
+.copyright {
+    border-top: 1px solid rgb(91, 85, 85);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    z-index: 999;
+}

@@ -1,0 +1,465 @@
+$brand: #FFBD27;
+.top {
+    background: $brand;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+}
+.bor
+{
+border-left: 2px solid #fff;
+
+padding: 5px;
+}
+.bg1 
+{
+    background: #FFF3D5;
+}
+.carousel-control-prev {
+    background-color: $brand;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 44%;
+    left: 70px; 
+    z-index: 2;
+    &:hover 
+    {
+        background: #000;
+    }
+}
+.carousel-control-next {
+    background-color: #FDB419;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 44%;
+    right: 20px;
+    z-index: 2;
+    &:hover 
+    {
+        background: #000;
+    }
+    
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl
+{
+    display: block;
+}
+.head_category {
+    border: 1px solid #ccc;
+    background: #F7F9FC;
+}
+.dropdown_product_cat
+{
+    border: 1px solid #F2F5FA;
+    background: #F7F9FC;
+}
+.bb 
+{
+    border-radius: 0;
+    font-size: 17px;
+    padding: 10px 15px;
+
+}
+.oip 
+{
+    border: none;
+    box-shadow: 1px 1px #ccc;
+}
+.carousel-caption 
+{
+    
+    max-width: 40%;
+    right: 0px;
+    margin: auto;
+    left: 54%;
+    top: 100px;
+    
+ 
+    h1 
+    {
+        
+        color: #000;
+        font-size: 60px;
+        font-weight: 900;
+    }
+    p 
+    {
+        color: #000;
+    }
+    .shop {
+        border-radius: 0;
+       font-weight: 500;
+        padding: 15px 30px;
+        &:hover 
+        {
+            background-color: #000;
+            color: $brand;
+            transition: 0.9s;
+         
+        }
+    }
+    .op 
+    {
+        padding-left: 10px;
+    }
+}
+
+ 
+.fbox 
+{
+    position: relative;
+    .fbox-s 
+    {
+        position: absolute;
+        width: 50px;
+        height: 0%;
+        background: $brand;
+        right: 20px;
+        top: 0;
+        transition: 0.9s;
+        .fbox1 {
+            position: absolute;
+            border-radius: 50%;
+            background: #000;
+            width: 35px;
+            height: 0;
+            right: 7px;
+            visibility: hidden;
+            i 
+            {
+                color: #fff;
+                
+            }
+        }
+        .fbox2 {
+            top: 50px;
+        }
+        .fbox3 {
+            top: 100px;
+        }
+        .fbox4 {
+            top: 150px;
+        }
+        .fbox5 {
+            top: 200px;
+        }
+
+    }
+    &:hover 
+    {
+        .fbox-s 
+        {
+            height: 84%;
+        }
+        .fbox1 
+        {
+            visibility: visible;
+            height: 35px;
+        }
+    }
+    img {
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+}
+.category 
+{
+    background: #F5FDFD;
+
+    .c-box 
+    {
+        position: relative;
+        overflow: hidden;
+        &-op 
+        {
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            background: rgba($color: #000000, $alpha: 0.6);
+            top: 5%;
+            left: 5%;
+            transform: perspective(1000px) rotateX(0deg);
+            transition: 0.8s;
+            visibility: hidden;
+        }
+        &:hover 
+        {
+            .c-box-op 
+            {
+                visibility: visible;
+                transform: perspective(10000px) rotateX(180deg);
+            }
+            .cate , .cate1, .cate2, .cate3, .cate4, .cate5
+            {
+                visibility: hidden;
+            }
+            .over , .over1, .over2, .over3, .over4, .over5
+            {
+                top: 45%;
+                left: 47%;
+                visibility: visible;
+                opacity: 1;
+            }
+            .over1, .over2, .over3, .over4  {
+                top: 45%;
+                left: 27%;
+            }
+            .over5 {
+                top: 45%;
+                left: 48%;
+            }
+             
+        }
+    }
+    .c-box img 
+    {
+        transition: 0.9s;
+        opacity: 1;
+    }
+    .c-box:hover img 
+    {
+        transform: scale(1.1);
+        opacity: 0.4;
+    }
+    .cate , .cate1, .cate2, .cate3, .cate4, .cate5
+    {
+        background: $brand;
+        width: 89px;
+        height: 37px;
+        padding: 8px 24px;
+        position: absolute;
+        top: 84%;
+        left: 10px;
+        font-weight: bold;
+        color: #031424;
+        visibility: visible;
+    }
+    .cate1 
+    {
+        width: 180px;
+         
+    }
+    .cate2 
+    {
+        width: 157px;
+         
+    }
+    .cate3 
+    {
+        width: 141px;
+         
+    }
+    .cate4 
+    {
+        width: 124px;
+         
+    }
+    .cate5 
+    {
+        width: 123px;
+         
+    }
+    .over, .over1, .over2, .over3, .over4, .over5
+    {
+        color: #fff;
+        position: absolute;
+        top: 10%;
+        left: 48%;
+        opacity: 0;
+        font-size: 20px;
+        font-weight: 500;
+        transition: 0.7s;
+        visibility: hidden;
+    } 
+    .over1, .over2, .over3, .over4 {
+        top: 10%;
+        left: 27%;
+    }
+     
+}
+.products {
+    position: relative;
+   
+
+.learn {
+    border-radius: 0;
+   font-weight: 500;
+    padding: 15px 30px;
+    position: absolute;
+    bottom: 40px;
+    left: 45%;
+    background-color: #000;
+    color: $brand;
+    &:hover 
+    {
+        background-color: $brand;
+        color: #000;
+        transition: 0.9s;
+     
+    }
+}
+}
+
+.news 
+{
+    background: #F6FDFE;
+    h3 {
+        font-size: 20px;
+    }
+    .latest_btn {
+        color: $brand;
+    }
+    .nbox 
+    {
+         
+        padding: 15px;
+        background: #fff;
+        border: 1px solid #fff;
+        .pic {
+            position: relative;
+        }
+        .date {
+            width: 50px;
+            height: 52px;
+            position: absolute;
+            top: -7px;
+            left: 20px;
+            text-align: center;
+            font-weight: 600;
+            
+
+        }
+        .date:before {
+            content: "";
+            border-width: 10px 10px 0 0;
+            border-style: solid;
+            border-color: transparent  #169eb1 #169eb1 transparent;
+            position: absolute;
+            top: 0;
+            left: -10px;
+        }
+        .date:after {
+            content: "";
+            border-width: 10px 0 0 10px;
+            border-style: solid;
+            border-color: transparent  #169eb1;
+            position: absolute;
+            top: 0;
+            right: -10px;
+        }
+
+
+
+        img {
+            width: 100%;
+            height: auto;
+            transition: all 0.3s ease;
+        }
+         
+        .content {
+            h3 {
+                font-weight: 600;
+                font-size: 20px;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+        .latest_btn {
+            .weq {color: $brand;}
+            &:hover
+            {
+                .weq 
+        {
+                color: #000;
+        }
+            }
+        }
+        
+    }
+}
+
+.clients 
+{
+    background: #FFFFFF;
+    .box2 {
+        left: 56%;
+        width: 60%;
+    box-shadow: 0px 0px 20px 5px #eee;
+    margin-top: 10px !important;
+    }
+     .pic1 {
+        position: relative;
+        .ar1 {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            color: $brand;
+             
+        }
+        .ar2 {
+            position: absolute;
+            top: 40%;
+            right: 40%;
+            color: $brand;
+        }
+     }
+}
+
+.sub
+{
+    background: url(https://www.ovationthemes.com/demos/shopkeeper-ecommerce/wp-content/themes/shopkeeper-ecommerce-pro/assets/images/subscribe-bg.png);
+    color: #fff;
+    .bc {
+        border-radius: 0;
+    }
+}
+
+.brand 
+{
+    .shift 
+    {
+    position: relative;
+    left: 5%;
+    }
+    .partner_content {
+        box-shadow: 0px 0px 20px 5px #eee;
+    }
+}
+.darkbox 
+{
+    background: #FFF3D5;
+    .bo 
+    {
+    border-left: 3px solid #ffbd27;
+    line-height: 3px;
+    padding: 10px;
+    }
+    .box3, .box4 
+    {
+        display: flex;
+        img 
+        {
+            padding-right: 15px;
+        }
+    }
+    .footer-cols li:before {
+        content: "\f068";
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-left: -1.3em;
+        width: 1.3em;
+        color: #576588;
+        font-size: 12px;
+    }
+}
+.box22 {
+    margin-left: 13rem !important;
+  
+}

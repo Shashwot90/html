@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is demo</h1>
+    <button class="a">Hide</button>
+    <button class="b">Show</button>
+    <button class="c">Toggle</button>
+    <button class="d">slideup</button>
+    <button class="e">slidedown</button>
+    <button class="f">slideToggle</button>
+    <button class="g">fadeOut</button>
+    <button class="h">fadeIn</button>
+    <button class="i">fadeToggle</button>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script> 
+        //hide
+        $(".a").click(function(){
+            $('h1').hide()
+        })
+        $(".b").click(function(){
+            $('h1').show()
+        })
+        $(".c").click(function(){
+            $('h1').toggle()
+        })
+        //slide
+        $(".d").click(function(){
+            $('h1').slideUp()
+        })
+        $(".e").click(function(){
+            $('h1').slideDown()
+        })
+        $(".f").click(function(){
+            $('h1').slideToggle()
+        })
+        //fade
+        $(".g").click(function(){
+            $('h1').fadeOut(5000)
+        })
+        $(".h").click(function(){
+            $('h1').fadeIn(5000)
+        })
+        $(".i").click(function(){
+            $('h1').fadeToggle(5000)
+        })
+    </script>
+</body>
+</html>

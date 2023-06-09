@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px; background: red; height: 200px;
+            transition-duration: 0.9s; transition-delay: 0.5s;
+        }
+        .box:hover {
+            width: 400px;
+        }
+        .box1 {
+            width: 200px; background: blue; height: 200px;
+            transition-duration: 0.9s; transform-origin: right top;
+        }
+        .box1:hover {
+            transform: rotate(180deg);
+        }
+        .box2 {
+            width: 200px; background: green; height: 200px;
+            transition-duration: 0.9s; transform-origin: 20px top;
+        }
+        .box2:hover {
+            transform: skew(40deg, 30deg);
+        }
+        .box3 {
+            width: 200px; background: yellow; height: 200px;
+            transition-duration: 0.9s; transform-origin: left top;
+        }
+        .box3:hover {
+            transform: scale(2,2);
+        }
+        .box4 {
+            width: 200px; background: brown; height: 200px;
+            transition-duration: 0.9s; transform-origin: left top;
+        }
+        .box4:hover {
+            transform: translate(50%, 50%);
+        }
+        .all {
+            width: 200px; background: orange; height: 200px;
+            transition-duration: 0.9s; 
+        }
+        .all:hover {
+            transform: rotate(40deg) scale(2) translate(100px,100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">A</div>
+    <div class="box1">B</div>
+    <div class="box2">C</div>
+    <div class="box3">D</div>
+    <div class="box4">E</div>
+    <div class="all">F</div>
+</body>
+</html>

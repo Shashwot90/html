@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    padding: 20px 0;
+}
+body {
+     font-family: 'Lato', sans-serif;
+}
+p {
+    line-height: 1.7;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.banner {
+     height: 100vh; 
+     background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(../img/mustangpeople-e1484112450804.jpeg);
+     background-size: cover;
+      
+
+}
+
+.logo img {
+    width: 110px;
+
+}
+
+.con {
+    max-width: 1200px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav ul {
+    list-style: none; 
+    position: relative;
+}
+
+nav li {
+    display: inline;
+    position: relative;
+
+}
+nav ul li{
+    padding: 5px;
+    border-radius: 4px;
+    
+
+}
+nav ul li:hover {
+    background: #FFB300;
+    color: #000;
+}
+
+
+nav li ul {
+    position: absolute;
+    top: 130%;
+    left: 0;
+    width: 220px;
+    background: #000;
+    display: none;
+    border-bottom: 2px solid #FFB300;
+    padding: 10px;
+}
+.a {
+    width: 291px;
+}
+.b {
+    width: 180px;
+}
+.d::after {
+    content: '\f0d7';
+    color: #fff;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 5;
+    left: 30;
+}
+nav li ul li {
+    line-height: 30px;
+}
+nav li ul::before {
+    content: '';
+    border: 20px solid;
+    border-color: transparent transparent black transparent;
+    position: absolute;
+    left: 20px;
+    top: -40px;
+
+}
+
+nav li:hover ul {
+    display: block;
+}
+nav li a {
+    color: #fff;
+    padding: 20px;
+    
+}
+ 
+
+
+.banner-text {
+    text-align: center;
+    color: #fff;
+    line-height: 2;
+    font-size: 18px;
+
+}
+.banner-text h1 {
+     
+    font-weight: bold;
+    padding-top: 210px;
+    font-weight: 600;
+    font-size: 42px;
+    display: inline-block;
+     
+    text-transform: capitalize;
+
+}
+.about {
+    text-align: center;
+}
+
+.about-ul {
+    padding: 10px;
+}
+.about-l {
+    padding: 40px;
+}
+
+.about-ul ul li ,  .about-l ul li {
+    list-style: none; 
+    position: relative;
+    display: inline;
+}
+.about-l li:hover {
+    border-bottom: 4px solid #000;
+    
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+
+.ov {
+    border-bottom: 4px solid #000;
+    
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+.gap-about {
+    display: flex;
+     
+    gap: 62px;
+    align-items: center;
+    
+}
+.about-content{
+    display: inline-block;
+     
+    font-size: 18px;
+    text-align: center;
+    width: 70%;
+    margin: 2em auto;
+    font-weight: 600;
+    
+}
+.about-content p {
+    line-height: 1.7;
+}
+.con1 {
+    width: cover;
+    margin: auto;
+}
+.bar {
+    background: #434343;
+    border-bottom: 5px solid #F3003F;
+    margin: auto;
+     
+    padding: 5px 0;
+}
+.gap-bar {
+    display: flex;
+    gap: 62px;
+    align-items: center;
+    justify-content: center;
+}
+.gapp {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+.bar p {
+    color: #fff;
+    line-height: 1;
+    text-align: left;
+}
+.bar small {
+    color: #fff;
+}
+.btn {
+    background: #434343;
+    padding: 5px 49px;
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+     
+}
+.btn-g {
+    background: #E6F623;
+    padding: 5px 20px;
+    font-weight: 700;
+    color: #434343;
+    display: inline-block;
+     
+}
+.flex1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.t-box {
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+}
+.treks h2 {
+    margin-left: 60px;
+    padding-bottom: 50px;
+}
+.t-box h4 , .i-box h5, .j-box h5{
+    
+     text-transform: uppercase;
+     font-weight: 600;
+    color: #000;
+    font-size: 16px;
+    text-align: left;
+    
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 7px;
+    
+}
+.i-box h5, .j-box h5{
+    text-transform: capitalize;
+    
+}
+
+ .i-box ul, .i-box p, .j-box ul {margin-top: 20px;}
+
+.t-box h4::before {
+    content: "\f041";
+    font-family: FontAwesome;
+    padding: 6px 9px;
+    position: absolute;
+    left: -60px;
+    top: 0;
+    background: #f6be00;
+    border-radius: 50%;
+    color: #fff;
+    
+}
+.t-box p, .i-box p {
+    padding-top: 7px;
+     
+    color: #000;
+    font-size: 14px;
+    text-align: left;
+}
+.i-box p {
+    font-size: 16px;
+}
+.i-box , .j-box{
+         
+        position: relative;
+        width: 80%;
+        margin-bottom: 20px;
+        padding-bottom: 30px;
+   
+}
+.i-box li {
+    list-style: none;
+}
+.i-box li , .j-box li{
+    padding-top: 5px;
+     
+    color: #000;
+    font-size: 16px;
+    text-align: left;
+}
+.j-box li {
+    margin-left: 20px;
+}
+.i-box h5::before , .j-box h5::before{
+     
+    font-family: FontAwesome;
+    padding: 6px 9px;
+    position: absolute;
+    left: -70px;
+    top: 0;
+    top: -5px;
+    font-size: 27px;
+    color: #2B3945;
+    
+}
+.s h5::before{
+    content: "\f0f5";
+}
+.d h5::before{
+    content: "\f238";
+}
+.f h5::before{
+    content: "\f236";
+}
+.g h5::before{
+    content: "\f030";
+}
+.inclusion {
+    padding: 50px 0;
+}
+.inclusion h2 {
+    padding-bottom: 50px;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 30px 0;
+}
+.f-box {
+    text-align: center;
+}
+.copyright {
+    border-top: 1px solid rgb(91, 85, 85);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    z-index: 999;
+}

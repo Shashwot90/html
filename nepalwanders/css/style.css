@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    padding: 20px 0;
+}
+body {
+     font-family: 'Lato', sans-serif;
+}
+p {
+    line-height: 1.7;
+}
+a {
+    text-decoration: none;
+}
+.banner {
+     height: 100vh; 
+     background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(../img/mainbg.jpg);
+     background-size: cover;
+
+}
+
+.logo img {
+    width: 110px;
+
+}
+
+.con {
+    max-width: 1200px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none; 
+    position: relative;
+}
+
+nav li {
+    display: inline;
+    position: relative;
+
+}
+nav ul li{
+    padding: 5px;
+    border-radius: 4px;
+    
+
+}
+.a {
+    width: 291px;
+    
+}
+.b {
+    width: 180px;
+  
+}
+
+.d::after {
+    content: '\f0d7';
+    color: #fff;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 5;
+    left: 30;
+}
+
+
+nav ul li:hover {
+    background: #FFB300;
+    color: #000;
+}
+/* nav li ul li a {
+    color: #FFB300;
+    background: #000;
+      
+} */
+
+nav li ul {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 220px;
+    background: #000;
+    display: none;
+    border-bottom: 2px solid #FFB300;
+    padding: 10px;
+}
+ 
+nav li ul li {
+    line-height: 30px;
+}
+nav li ul::before {
+    content: '';
+    border: 20px solid;
+    border-color: transparent transparent black transparent;
+    position: absolute;
+    left: 20px;
+    top: -30px;
+
+}
+
+nav li:hover ul {
+    display: block;
+}
+nav li a {
+    color: #fff;
+    padding: 20px;
+    
+}
+.banner-text {
+    text-align: center;
+    color: #fff;
+
+}
+.banner-text h1 {
+    font-size: 55px;
+    font-weight: bold;
+    padding-top: 210px;
+
+}
+.banner-text h1 span {
+    color: orange;
+}
+.about {
+    background: #F5F5F5;
+    padding: 100px 0;
+    text-align: center;
+}
+.about h2 {
+    font-size: 35px;
+    padding: 20px;
+}
+.btn {
+    background: rgb(48, 46, 46);
+    padding: 17px 28px;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 30px;
+}
+.treks {
+    padding: 30px 0;
+}
+.treks h2 {
+    font-size: 33px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.t-box {
+    position: relative;
+    width: 32%;
+    margin-bottom: 20px;
+}
+.v {
+    width: 66%;
+}
+.t-box h4 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 0px 2px 2px #000;
+}
+.t-box img {
+    width: 100%;
+}
+.video {
+    height: 80vh; 
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(https://nepalwanders.com/wp-content/themes/newnepalwanders/assets/images/bg/youtube.jpg);
+    background-size: cover;
+    position: relative;
+}
+.vbox {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: #fff;
+}
+.vbox h1 {
+    font-size: 56px;
+}
+.circle {
+    width: 130px;
+    height: 130px;
+    background: #fff;
+    border-radius: 50%;
+    margin: auto;
+}
+.team {
+    padding: 40px 0;
+    text-align: center;
+}
+.team img {
+    border-radius: 50%;
+} 
+.team h2 {
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+.team h3 {
+    font-size: 22px;
+    font-weight: 400;
+    padding: 20px 0;
+    color: rgba(90, 86, 79, 1);
+    text-transform: capitalize;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 30px 0;
+}
+.f-box {
+    text-align: center;
+}
+.copyright {
+    border-top: 1px solid rgb(91, 85, 85);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    z-index: 999;
+}
+
+@media(max-width: 480px){
+    .flex{
+        flex-direction: column;
+    }
+    .con {
+        padding: 20px;
+    }
+    .t-box{
+        width: 100%;
+    }
+    nav ul {
+        display: none;
+    }
+}

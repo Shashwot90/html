@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="a.jpg" alt="">
+    <img src="b.jpg" alt="">
+    <a href="fb.com">FB</a>
+    <a href="tw.com">TW</a>
+    <div class="demo">This is class</div>
+    <div id="demo">This is id</div>
+    <h1>This is demo tag</h1>
+    <script>
+        var a;
+        a=document.all;
+        console.log(a)
+        a=document.head
+        console.log(a)
+        a=document.title="sajan"
+        console.log(a)
+        a=document.body
+        console.log(a)
+        a=document.images
+        console.log(a)
+        a=document.images[0].src="sajan.jpg"  
+        console.log(a)  
+        a=document.links
+        console.log(a)
+        a=document.links[0].href="sajan.com"
+        console.log(a)
+        a = document.getElementById('demo')
+        console.log(a)
+        a = document.getElementById('demo').innerHTML='sss'
+        console.log(a)
+        a = document.getElementsByClassName('demo') 
+        console.log(a)
+        a = document.getElementsByClassName('demo')[0].innerHTML
+        console.log(a)
+        a = document.getElementsByTagName('h1')[0].innerText
+        console.log(a)
+        document.getElementsByTagName('h1')[0].style.fontSize='66px'
+        document.getElementsByTagName('h1')[0].style.background='red'
+        //class is in multiple so array is passed
+    </script>
+</body>
+</html>

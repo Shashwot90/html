@@ -1,0 +1,21 @@
+$(document).ready(function () {
+    $('.gallery li:lt(8)').show();
+    $('.less').hide();
+    var items =  10;
+    var shown =  8;
+    $('.more').click(function () {
+        $('.less').show();
+        shown = $('.gallery li:visible').length+4;
+        if(shown< items) {
+          $('.gallery li:lt('+shown+')').show(300);
+        } else {
+          $('.gallery li:lt('+items+')').show(300);
+          $('.more').hide();
+        }
+    });
+    $('.less').click(function () {
+        $('.gallery li').not(':lt(8)').hide(300);
+        $('.more').show();
+        $('.less').hide();
+    });
+});

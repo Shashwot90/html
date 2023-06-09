@@ -1,0 +1,63 @@
+.destination {
+    padding: 64px 0;
+    
+}
+.destination h4 {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.flex-des {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.t-box img {
+    width: 100%;
+    
+}
+.t-box {
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+}
+.t-box h4 {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    
+}
+.days {
+    color: #fff;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 20px;
+}
+.info  {
+    color: #fff;
+    background: #000;
+    position: absolute;
+    padding: 30px;
+    width: 91%;
+    height: 290px;
+    text-align: center;
+    z-index: 8;
+    top: 5%;
+    left: 2%;
+    display: none;
+}
+
+.t-box:hover .info {
+    display: block;
+     
+}

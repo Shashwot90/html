@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {height: 1900px;}
+        nav{background: green; padding: 120px; position: fixed; top: 0;
+        width: 100%; transition: 0.9s;}
+        .chg{background: red;}
+         
+        img { height: 140px; width: 140px;}
+    </style>
+</head>
+<body>
+    <nav>
+        <img class="a" src="https://broadwayinfosys.com/uploads/logo/1667276403.new_broadway_logo.svg" alt="">
+        <img class="b" src="https://broadwayinfosys.com/uploads/logo/1667276492.logo-design-small.svg" alt="">
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(window).scroll(function(){
+             
+            if($(this).scrollTop()>150)
+            {
+                $("nav").addClass('chg')
+                $(".b").show()
+                $(".a").hide()
+            }
+            else {
+                $("nav").removeClass('chg')
+                $(".b").hide()
+                $(".a").show()
+            }
+        })
+    </script>
+</body>
+</html>

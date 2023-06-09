@@ -1,0 +1,14 @@
+@mixin flex($jc: space-between, $ai: center, $wrap: wrap) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $wrap;
+}
+
+@mixin res 
+{
+    @media(max-width: 768px)
+    {
+    @content;
+    }
+}

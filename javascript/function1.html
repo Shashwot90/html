@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+<body>
+    <script>
+        function abc(a){
+            return a*a
+        }
+        //function expression
+        var bcd = function(b)
+        {
+            return b*b
+        }
+        console.log(bcd(4))
+
+        var efg = (c) => c*c 
+        console.log(efg(5))
+         
+        //function scope local and global
+        var ss = 3
+        console.log(ss)//3
+        if(true){
+            var ss=4
+            console.log(ss)//4
+        }
+        console.log(ss)//4
+        let dd=3
+        console.log(dd)//3
+        if(true){
+            let dd=4
+            console.log(dd)//4
+        }
+        console.log(dd)//3  
+    </script>
+
+</body>
+</html>  

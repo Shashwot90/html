@@ -1,0 +1,101 @@
+/*
+Theme Name: Newnepalwanders
+Theme URI: http://sajan.me/
+Author: sajan.me
+Author URI: http://sajan.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: nepalwanders
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+nepalwanders is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+
+.wpcf7-form-control.wpcf7-text
+{
+    width:150%;
+}
+.wpcf7-form-control.wpcf7-textarea {
+
+    width: 649px;
+    height:109px;
+
+}
+input.wpcf7-form-control.wpcf7-date.wpcf7-validates-as-required.wpcf7-validates-as-date {
+    width: 303px;
+}
+
+@media(max-width: 922px)
+	{
+		.sa-navigation ul li
+		{
+			display:block !important;
+		}
+		.sa-navigation .text-right
+		{
+			text-align: left;
+		}
+		.about-us-area
+		{
+			height:auto !important;
+			padding:10px 15px;
+		}
+		.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover
+		{
+			background: #000;
+color: #fff !important;
+		}
+		.nav-tabs > li{ display: block !important;}
+		.inner_banner_4, .inner_banner{ height: 50vh !important; padding: 0 !important;}
+		.inner_banner h2 span{ font-size:22px !important;}
+		.b-price, .deposit-amt{ font-size:12px !important}
+		.misc-col5{ width: 35% !important}
+		.misc-col1{width: 30% !important}
+		.trip-highlight{ width:87% !important; text-align:left !important}
+		.day-desc{width: auto !important; font-size: 18px !important;text-align:left !important;}
+		.sa-navigation ul{display: block !important;
+padding-left: 0;
+margin-bottom: 0;
+font-size: 0;
+text-align: left !important;}
+
+.sa-navigation ul li.sa-dropdown ul li ul{left: calc(60% + 1px) !important;}
+		.inner_banner p{ padding: 0px 10px !important;}
+}

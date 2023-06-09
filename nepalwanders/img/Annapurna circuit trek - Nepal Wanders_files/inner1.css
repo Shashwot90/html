@@ -1,0 +1,419 @@
+/************************************************
+                Destinations Page CSS
+*************************************************/
+h4.destination-title-text {
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: #444443;
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  h4.destination-title-text {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    margin-top: 0;
+  }
+	.single-contact.wow.fadeInUp {
+
+    text-align: center;
+
+}
+}
+.destinations-feature-text {
+  padding: 45px 0;
+}
+.destinations-feature-text p {
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0pt;
+  text-align: center;
+  color: #000000;
+
+}
+#destinations-list ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+#destinations-list ul .destination-item {
+  margin-bottom: 30px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  height:300px;
+  overflow:hidden;
+}
+#destinations-list ul .destination-item .destination-item-inner-bx {
+  height: 100%;
+}
+#destinations-list ul .destination-item img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+	height:300px;
+ 
+}
+#destinations-list ul .destination-item .destination-title {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  padding: 10px 20px;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#destinations-list ul .destination-item .destination-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: transparent;
+  overflow: hidden;
+  letter-spacing: 1px;
+  border: 10px solid transparent;
+}
+#destinations-list ul .destination-item .destination-hover .destination-hover-wrap {
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  display: table;
+  text-align: center;
+  color: #fff;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 300;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  #destinations-list ul .destination-item .destination-hover .destination-hover-wrap {
+    line-height: 20px;
+  }
+}
+#destinations-list ul .destination-item .destination-hover .destination-hover-wrap .destination-hover-inner-cell {
+
+  height: 100%;
+  vertical-align: middle;
+  padding: 100px 15%;
+}
+@media (max-width: 991px) {
+  #destinations-list ul .destination-item .destination-hover .destination-hover-wrap .destination-hover-inner-cell {
+    padding: 0 10px;
+  }
+	#destinations-list ul .destination-item img
+	{
+		height:100%;
+	}
+}
+@media (max-width: 991px) {
+  #destinations-list ul .destination-item .destination-hover {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+#destinations-list ul .destination-item .destination-hover a {
+  color: #fff;
+}
+#destinations-list ul .destination-item .destination-hover .destination-desc {
+  display: block;
+  margin-bottom: 10px;
+}
+#destinations-list ul .destination-item .destination-hover .destination-findmore {
+  display: block;
+}
+#destinations-list ul .destination-item .destination-hover .destination-findmore a {
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  color: #fff;
+}
+#destinations-list ul .destination-item .destination-hover .destination-findmore a:hover,
+#destinations-list ul .destination-item .destination-hover .destination-findmore a:focus {
+  text-decoration: none;
+}
+#destinations-list ul .destination-item .destination-hover .destination-findmore i {
+  font-size: 22px;
+  vertical-align: middle;
+}
+#destinations-list ul .destination-item:hover .destination-title {
+  display: none;
+}
+#destinations-list ul .destination-item:hover .destination-hover {
+  display: block;
+}
+.create-adventure-box h4 {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .create-adventure-box .create-adventure-wrap:hover .create-adventure-hover-wrap {
+    display: block;
+  }
+}
+.create-adventure-box .create-adventure-bg {
+  position: relative;
+}
+.create-adventure-box .create-adventure-bg span.create-adventure-title {
+  display: block;
+  position: absolute;
+  top: 42%;
+  width: 100%;
+  padding: 10px 20px;
+  letter-spacing: 0.2em;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .create-adventure-box .create-adventure-bg span.create-adventure-title {
+    padding: 10px;
+    letter-spacing: 0.05em;
+  }
+}
+.create-adventure-box .create-adventure-bg .create-adventure-hover-wrap {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: transparent;
+  overflow: hidden;
+  border: 10px solid transparent;
+}
+.create-adventure-box .create-adventure-bg .create-adventure-hover-wrap .create-adventure-hover {
+  background: rgba(183, 152, 109, 0.9);
+  padding: 70px 15%;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.create-adventure-box .create-adventure-bg .create-adventure-hover-wrap .create-adventure-hover .create-adventure-desc {
+  display: block;
+  margin-bottom: 10px;
+}
+.create-adventure-box .create-adventure-bg .create-adventure-hover-wrap .create-adventure-hover .create-adventure-more {
+  
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  color: #fff;
+  display: block;
+}
+.create-adventure-box .create-adventure-bg .create-adventure-hover-wrap .create-adventure-hover .create-adventure-more i {
+  font-size: 22px;
+  vertical-align: middle;
+}
+#view-current-adveture-CTA {
+  margin: 30px 0 110px;
+}
+@media (max-width: 768px) {
+  #view-current-adveture-CTA .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  #create-own-adveture-CTA .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.view-current-adventure-box h4 {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .view-current-adventure-box .view-current-adventure-wrap:hover .view-current-adventure-hover-wrap {
+    display: block;
+  }
+}
+.view-current-adventure-box .view-current-adventure-bg {
+  position: relative;
+}
+.view-current-adventure-box .view-current-adventure-bg span.view-current-adventure-title {
+  display: block;
+  position: absolute;
+  top: 42%;
+  width: 100%;
+  padding: 10px 20px;
+  letter-spacing: 0.2em;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .view-current-adventure-box .view-current-adventure-bg span.view-current-adventure-title {
+    padding: 10px;
+    letter-spacing: 0.05em;
+  }
+}
+.view-current-adventure-box .view-current-adventure-bg .view-current-adventure-hover-wrap {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: transparent;
+  overflow: hidden;
+  border: 10px solid transparent;
+}
+.view-current-adventure-box .view-current-adventure-bg .view-current-adventure-hover-wrap .view-current-adventure-hover {
+  background: rgba(183, 152, 109, 0.9);
+  padding: 70px 15%;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.view-current-adventure-box .view-current-adventure-bg .view-current-adventure-hover-wrap .view-current-adventure-hover .view-current-adventure-desc {
+  display: block;
+  margin-bottom: 10px;
+}
+.view-current-adventure-box .view-current-adventure-bg .view-current-adventure-hover-wrap .view-current-adventure-hover .view-current-adventure-more {
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  color: #fff;
+  display: block;
+}
+.view-current-adventure-box .view-current-adventure-bg .view-current-adventure-hover-wrap .view-current-adventure-hover .view-current-adventure-more i {
+  font-size: 22px;
+  vertical-align: middle;
+}
+.fixed-verticle-nav {
+  padding: 30px 0;
+  text-align: center;
+}
+.fixed-verticle-nav .scotch-panel-logo {
+  margin: 20px 0;
+  display: inline-block;
+}
+.fixed-verticle-nav ul.navbar-nav {
+  display: block;
+  float: none;
+  background: none;
+}
+.fixed-verticle-nav ul.navbar-nav > li {
+  float: none;
+  overflow: visible;
+  display: block;
+  background: none;
+}
+.fixed-verticle-nav ul.navbar-nav > li > a {
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  text-transform: lowercase;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  background: none;
+}
+.fixed-verticle-nav ul.navbar-nav > li > a:hover,
+.fixed-verticle-nav ul.navbar-nav > li > a:focus {
+  color: #c6c4b2;
+  background: none;
+}
+.fixed-verticle-nav ul.navbar-nav > li .caret {
+  border: none;
+  background: url('../img/arrow-down.png') no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  width: 15px;
+  height: 8px;
+  position: relative;
+  right: 10px;
+  top: -2px;
+  cursor: pointer;
+}
+.fixed-verticle-nav ul.navbar-nav > li.open .caret {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.fixed-verticle-nav ul.navbar-nav li.active > a,
+.fixed-verticle-nav ul.navbar-nav li.active > a:hover,
+.fixed-verticle-nav ul.navbar-nav li.active > a:focus {
+  background: none;
+  color: #c6c4b2;
+}
+.fixed-verticle-nav .child-dropdown-menu > .active > a {
+  background: transparent !important;
+  color: #c6c4b2 !important;
+}
+.fixed-verticle-nav .child-dropdown-menu li {
+  margin: 10px auto;
+}
+.fixed-verticle-nav .child-dropdown-menu li > a {
+  color: #444443;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+}
+
+.alignnone.size-medium.wp-image-668 {
+
+    width: 71%;
+    margin-right:100px;
+    float: right;
+
+}
+
+
+

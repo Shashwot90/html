@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .v {
+            display: none;
+        }
+        .h {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="b" onclick="aa()">Show</button>
+    <nav>
+        <ul id="a" onclick="aa()">
+            <li>Home</li>
+            <li>About us</li>
+        </ul>
+    </nav>
+
+
+    <button id="d" onclick="document.getElementById('c').classList.toggle('v')">Show/hide</button>
+    <nav>
+        <ul id="c" onclick="document.getElementById('c').classList.toggle('v')">
+            <li>Home</li>
+            <li>About us</li>
+        </ul>
+    </nav>
+
+    <button onclick="bb()">menu</button>
+    <nav>
+        <ul id="s" >
+            <li>Home</li>
+            <li>About us</li>
+        </ul>
+    </nav>
+
+
+    <script>
+        function aa() {
+            if(document.getElementById('a').style.display == 'none') {
+                document.getElementById('a').style.display='block'
+                document.getElementById('b').innerText='hide'
+            }
+            else {
+                document.getElementById('a').style.display='none'
+                document.getElementById('b').innerText='show'
+
+            }
+        }
+
+        function bb() {
+            document.getElementById('s').classList.toggle('h')
+        }
+    </script>
+</body>
+</html>

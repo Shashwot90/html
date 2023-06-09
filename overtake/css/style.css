@@ -1,0 +1,85 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+.bg, .icons, .team, .btn-primary, .navbar-nav .nav-link.active, .navbar-expand-lg .navbar-nav .nav-link:hover {
+  background: #055999;
+  color: #fff !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #055999;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.carousel-caption {
+  bottom: 100px;
+}
+
+.box {
+  background: #efefef;
+  padding: 20px;
+  border: 1px solid #efefef;
+}
+.box i {
+  font-size: 55px;
+  padding: 24px 0;
+}
+.box p {
+  color: #999;
+}
+.box:hover {
+  background: #fff;
+  border: 1px solid #055999;
+}
+
+.btn-primary {
+  border: none;
+  border-radius: none;
+}
+
+.clients img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+.clients img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+  width: 30px;
+  height: 30px;
+  background: #055999;
+  color: #fff;
+  margin: 2px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  top: -20px;
+  right: 40px;
+}
+
+.breadcrumb {
+  background: url(https://webthemez.com/demo/overtake-business-bootstrap-html-website-template/img/slides/1.jpg) no-repeat, #2056AE;
+  background-size: 23%;
+  background-position: right top;
+  color: #fff;
+}
+
+.icons {
+  width: 60px;
+  height: 60px;
+}
+
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+  background: #F4F4F4;
+  margin: 2px 0;
+}/*# sourceMappingURL=style.css.map */

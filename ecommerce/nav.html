@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container-fluid {
+            background: pink;
+        }
+        .com 
+        {
+            padding-right:  40px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  </head>
+
+  <body>
+    <div class="main-header-box py-3 nav_wrap">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-2 col-md-3 col-12 align-self-center">
+              <div class="logo">
+                <a href="https://www.ovationthemes.com/demos/shopkeeper-ecommerce/" class="custom-logo-link" rel="home" aria-current="page"><img width="171" height="23" src="https://www.ovationthemes.com/demos/shopkeeper-ecommerce/wp-content/uploads/sites/24/2021/12/logo.png" class="custom-logo" alt="Shopkeeper Ecommerce"></a>                <div class="logo-text">
+                                      </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-1 col-6 header-nav px-0 align-self-center">
+              <div class="menubar m-0 mt-md-0">
+      <div class="innermenubox ">
+        <div class="toggle-nav mobile-menu">
+          <span onclick="openNav()"><i class="fas fa-bars pt-md-3"></i></span>
+        </div>
+        <div id="mySidenav" class="nav sidenav">
+          <nav id="site-navigation" class="main-navigation">
+            <a href="javascript:void(0)" class="closebtn mobile-menu" onclick="closeNav()"><i class="fas fa-times"></i></a>
+            <div class="menu clearfix"><ul id="menu-menu-1" class="clearfix mobile_nav sf-js-enabled sf-arrows" style="touch-action: pan-y;"><li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-12 current_page_item menu-item-58"><a href="https://www.ovationthemes.com/demos/shopkeeper-ecommerce/" aria-current="page">Home</a></li>
+    <li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-59"><a href="https://www.ovationthemes.com/demos/shopkeeper-ecommerce/blog/" class="sf-with-ul">Blog</a>
+    <ul class="sub-menu" style="display: none;">
+        <li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="https://www.ovationthemes.com/demos/shopkeeper-ecommerce/blog-with-right-sidebar/">Blog With Right Sidebar</a></li>
+        <li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a href="https://www.ovationthemes.com/demos/shopkeeper-ecommerce/blog-with-left-sidebar/">Blog With Left Sidebar</a></li>
+    </ul>
+    </li>
+    <li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-63"><a href="https://www.ovationthemes.com/demos/shopkeeper-ecommerce/page/" class="sf-with-ul">Page</a>
+    <ul class="sub-menu" style="display: none;">
+        <li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="https://www.ovationthemes.com/demos/shopkeeper-ecommerce/page-with-right-sidebar/">Page With Right Sidebar</a></li>
+        <li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="https://www.ovationthemes.com/demos/shopkeeper-ecommerce/page-with-left-sidebar/">Page With Left Sidebar</a></li>
+    </ul>
+    </li>
+    <li id="menu-item-67" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67"><a href="https://www.ovationthemes.com/demos/shopkeeper-ecommerce/my-account/">My account</a></li>
+    <li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a href="https://www.ovationthemes.com/demos/shopkeeper-ecommerce/shop/">Shop</a></li>
+    <li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a href="https://www.ovationthemes.com/demos/shopkeeper-ecommerce/contact/">Contact</a></li>
+    <li id="menu-item-66" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66"><a target="_blank" rel="noopener" href="https://www.ovationthemes.com/wordpress/shopkeeper-wordpress-theme/?add-to-cart=7230">Buy Now</a></li>
+    </ul></div>      </nav><!-- #site-navigation -->
+        </div>
+      </div>
+    </div>        </div>
+            <div class="col-lg-1 col-md-1 col-6 align-self-center">
+                                          <div class="cart_box py-3 text-center">
+                    <a href="https://www.ovationthemes.com/demos/shopkeeper-ecommerce/cart/">
+                      <i class="fas fa-shopping-basket"></i>
+                      <span class="cart-value"> 0</span>
+                    </a>
+                  </div>
+                                  </div>
+            <div class="col-lg-1 col-md-3 col-12 px-md-0 align-self-center">
+              <div class="head_category">
+                <select name="product_cat" id="product_cat" class="dropdown_product_cat">
+        <option value="" selected="selected">All Category</option>
+        <option class="level-0" value="best">best</option>
+        <option class="level-0" value="featured">featured</option>
+        <option class="level-0" value="uncategorized">Uncategorized</option>
+    </select>
+        <script type="text/javascript">
+            jQuery(function($){
+                var product_cat_dropdown = $(".dropdown_product_cat");
+                function onProductCatChange() {
+                    if ( product_cat_dropdown.val() !=='' ) {
+                        location.href = "https://www.ovationthemes.com/demos/shopkeeper-ecommerce/?product_cat=" +product_cat_dropdown.val();
+                    }
+                }
+                product_cat_dropdown.change( onProductCatChange );
+            });
+        </script>
+                  </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 pl-md-0 align-self-center">
+              <div class="product-search">
+                              <form role="search" method="get" class="woocommerce-product-search" action="https://www.ovationthemes.com/demos/shopkeeper-ecommerce/">
+        <label class="screen-reader-text" for="woocommerce-product-search-field-0">Search for:</label>
+        <input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Search products…" value="" name="s">
+        <button type="submit" value="Search">Search</button>
+        <input type="hidden" name="post_type" value="product">
+    </form>
+                          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+    </body>
+    </html>

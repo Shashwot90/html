@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #sajan {
+            width: 200px; 
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="sajan">
+       
+    </div>
+    <ul id="a">
+        <li>Home</li>
+        <li>Aboutus</li>
+        <li>Services</li>
+    </ul>
+    <div id="demo">
+        <h3>this is heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, rem!</p>
+        <h3>this is heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, rem!</p>
+        <h3>this is heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, rem!</p>
+        <h3>this is heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, rem!</p>
+   
+    </div>
+    <div id="demo2">
+        <ul>
+            <li><a href="#demo2-1">Home</a></li>
+            <li><a href="#demo2-2">AboutUs</a></li>
+            <li><a href="#demo2-3">Services</a></li>
+        </ul>
+        <div id="demo2-1">
+            <h1>This is home page</h1>
+        </div>
+        <div id="demo2-2">
+            <h1>This is about page</h1>
+        </div>
+        <div id="demo2-3">
+            <h1>This is services page</h1>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $('#sajan').draggable()
+        $('#a').sortable()
+        $('#demo').accordion()
+        $('#demo2').tabs()
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aa {
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is demo</h1>
+    <button class="a">remove</button>
+    <button class="b">empty</button>
+    <button class="c">append</button>
+    <button class="d">prepend</button>
+    <button class="e">after</button>
+    <button class="f">before</button>
+    <button class="g">addClass</button>
+    <button class="h">removeClass</button>
+    <button class="i">toggleClass</button>
+    <button class="j">css</button>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(".a").click(function(){
+            $("h1").remove()
+        })
+        $(".b").click(function(){
+            $("h1").empty()
+        })
+        $(".c").click(function(){
+            $("h1").append("<input>")
+        })
+        $(".d").click(function(){
+            $("h1").prepend("<p>lo</p>")
+        })
+        $(".e").click(function(){
+            $("h1").after("<input>")
+        })
+        $(".f").click(function(){
+            $("h1").before("<a>hi</a>")
+        })
+        $(".g").click(function(){
+            $("h1").addClass("aa")
+        })
+        $(".h").click(function(){
+            $("h1").removeClass("aa")
+        })
+        $(".i").click(function(){
+            $("h1").toggleClass("aa")
+        })
+        $(".j").click(function(){
+            $("h1").css({"background":"red","color":"yellow"})
+        })
+    </script>
+</body>
+</html>

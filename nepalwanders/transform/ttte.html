@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px; height: 200px; background: green; position: relative;
+            overflow: hidden;
+        }
+        .box h2 {
+            position: absolute; color: aliceblue;
+             bottom: 20px; left: 20px; transition: 0.9s;
+        }
+        .box:hover h2 {
+            transform: translate(0px, -30px);
+        }
+        img { width: 100%; height: 100%; transition: 0.9s;}
+        .box:hover img {
+            transform: scale(1.3);
+        }
+        .box::before {
+            content: ''; position: absolute; width: 0%; height: 2px; 
+            background: red; top: 0; left: 0; transition: 0.9s;
+        }
+        .box:hover::before {
+            width: 100%;
+        }
+        .box::after {
+            content: ''; position: absolute; width: 0%; height: 2px;
+            background-color: blue; top: 100%; right: 0; transition: 0.9s;
+        }
+        .box:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../../site/img/ban-1.png" alt="">
+        <h2>Hello</h2>
+    </div>
+</body>
+</html>

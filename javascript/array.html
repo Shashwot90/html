@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var fr = ['ram', 'sita', 'rita','gita']
+        console.log(fr)
+        console.log(fr[0])
+        console.log(fr[3])
+        fr[1]='kafle'
+        console.log(fr)
+        console.log(fr.length)
+        console.log(fr.sort())
+        console.log(fr.reverse())
+        console.log(fr.pop())//remove last
+        console.log(fr)
+        console.log(fr.push('aaaa'))//last add
+        console.log(fr)
+        console.log(fr.shift())//first remove
+        console.log(fr)
+        console.log(fr.unshift('ssss'))//first ma add
+        console.log(fr)
+
+        //find,filter,map
+        console.log(fr.join('/'))//joins the elements in array
+        var age = [22,30,14,20,90]
+        console.log(fr.concat(age))
+        var find = age.find((a) => a>15)//to find only one data
+        console.log(find)
+        var filter = age.filter((a) => a>15)//filter the whole data from the array
+        console.log(filter)
+        var map = age.map((a) => a+15)//map is used to return the whole data
+        console.log(map)//prints the data one by one 
+        //return new array
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is demo</h1>
+    <button onclick="document.getElementsByTagName('h1')[0].style.display='none'">Hide</button>
+    <button onclick="document.getElementsByTagName('h1')[0].style.display='block'">show</button>
+    <button onclick="document.getElementsByTagName('h1')[0].style.marginLeft='500px'">Margin</button>
+    <button onclick="document.getElementsByTagName('h1')[0].style.fontSize='50px'">fontSize</button>
+    <button onclick="document.getElementsByTagName('h1')[0].style.background='red'">bacckground</button>
+    <button onclick="aa()">all</button>
+    
+    <script>
+        function aa() {
+            document.getElementsByTagName('h1')[0].style.marginLeft='500px'
+            document.getElementsByTagName('h1')[0].style.color='yellow'
+            document.getElementsByTagName('h1')[0].style.background='green'
+        }
+    </script>
+</body>
+</html>

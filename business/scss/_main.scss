@@ -1,0 +1,396 @@
+.con {
+    max-width: 960px;
+    margin: auto;
+    @include res 
+    {
+        padding: 15px;
+    }
+}
+header 
+{
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #fff;
+    .con
+    {
+        @include flex;
+        .logo 
+        {
+            font-size: 34px;
+            font-weight: bold;
+            span
+            {
+                color: $brand;
+            }
+        }
+    }
+    nav
+    {
+        span
+        {
+            display: none;
+            font-size: 22px;
+            border: 2px solid $g;
+            padding:  0px 10px;
+            @include res 
+            {
+                display: block;
+            }
+        }
+         
+        ul 
+        {
+            @include res
+        {
+            display: none;
+        }
+            li 
+            {
+                display: inline;
+                a 
+                {
+                    color: $g;
+                    padding: 10px;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .active 
+    {
+        a 
+        {
+            color: $b;
+        }
+    }
+}
+
+.banner 
+{
+    position: relative;
+    overflow: hidden;
+    img 
+    {
+        width: 100%;
+        animation: zoom 5s infinite alternate;
+         
+    }
+    &-text 
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        h1 
+        {
+            font-size: 4rem;
+            color: #fff;
+            @include res 
+            {
+                font-size: 2rem;
+            }
+            text-transform: uppercase;
+            span 
+            {
+                color:$brand;
+            }
+        }
+    }
+}
+.services-outer 
+{
+    
+    .s-circle 
+    {
+        width: 100px;
+        height: 100px;
+        background: #fff;
+        border: 2px solid $g;
+        border-radius: 50%;
+        position: absolute;
+        top: -37%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    @include flex(space-between,align-items,nowrap);
+    @include res 
+    {
+        @include flex;
+    }
+    .s-box {
+        position: relative;
+        flex-grow: 1;
+        background: #fff;
+        padding: 30px;
+        border: 1px solid $g;
+       h3 
+       {
+        margin-top: 40px;
+       }
+    }
+}
+@keyframes zoom {
+          0%{ transform: scale(1);}  
+         100%{ transform: scale(3);} 
+            
+}
+.quote 
+{
+    background: $brand;
+    color: #fff;
+    padding: 30px 0;
+    text-transform: uppercase;
+    .con 
+    {
+        @include flex(space-around);
+    }
+    .btn 
+    {
+        background: transparent;
+        border: 2px solid #fff;
+        padding: 5px 20px;
+        color: #fff;
+    }
+}
+
+.services
+{
+    background: #F8F8F8;
+    padding: 30px 0  0 0;
+    text-align: center;
+    h1
+    {
+        font-size: 34px;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+}
+
+.featured 
+{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/1.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    h1, h2 {
+        color: #fff;
+    }
+    p {
+        display: none;
+    }
+}
+.hover-about 
+{
+    background: $b;
+    &:hover 
+    {
+        transform: translate(0px,-300px);
+    }
+}
+
+.counter 
+{
+    background: #000;
+    color: $brand;
+    padding: 30px 0;
+    text-align: center;
+    h2 {
+        color: #fff;
+        font-size: 44px;
+        @include res 
+        {
+            font-size: 22px;
+        }
+    }
+    .con 
+    {
+        @include flex;
+        @include res 
+        {
+            flex-direction: column;
+        }
+    }
+}
+
+.websitetools 
+{
+    padding: 50px 0;
+    text-align: center;
+    background: #F9F9FB;
+    h2 
+    {
+        font-size: 40px;
+        padding-bottom: 40px;
+        text-transform: uppercase;
+    }
+    .box 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        justify-content: space-between;
+        gap: 20px;
+        margin: 40px 0;
+        @include res 
+        {
+            flex-direction: column;
+        }
+    }
+    .flex 
+    {
+       display: flex;
+       @include res 
+        {
+            width: 100%;
+        }
+       width: 30%;
+       align-items: center;
+        
+       gap: 30px;
+       i 
+       {
+       font-size: 33px;
+       padding: 20px;
+       color: $brand;
+       }
+       h4 
+       {
+        font-size: 15px;
+       }
+       p 
+       {
+        font-size: 13px;
+       }
+    }
+     
+}
+
+.work 
+{
+    text-align: center;
+    padding: 30px 0;
+    &-inner 
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .workbox 
+        {
+            width: 20%;
+            border: 1px solid #fff;
+            position: relative;
+            &:hover 
+            {
+                img 
+                {
+                    filter: saturate(20%);
+                }
+            }
+            img 
+            {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.work-hover 
+{
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    position: absolute;
+    top: -20px;
+    left: 120px;
+    border-radius: 50%;
+    visibility: hidden;
+    transition: 0.9s;
+     
+}
+.workbox 
+{
+    &:hover 
+    {
+        .work-hover {
+        visibility: visible;
+        transform: translate(0px, 200px);
+        top: 110px;
+        }
+    }
+
+}
+
+.can-do 
+{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/2\ \(2\).jpg) center fixed;
+    position: relative;
+    padding: 50px 0 0 ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    h4 
+    {
+        color: $brand;
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    h1 {
+        color: #fff;
+        font-size: 33px;
+        font-weight: bold;
+        padding:  0 50px 50px 40px;
+    }
+    .btns 
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .btns-1 {
+        padding-right: 50px;
+    }
+    .btn 
+    {
+        border: 2px solid #fff;
+        background: transparent;
+        color: #fff;
+        padding: 10px 40px;
+         
+       
+    }
+    .btn-1 
+    {
+        color: #fff;
+        background: $brand;
+        border: 1px solid $brand;
+        padding: 10px 40px;
+    }
+    
+    .bo1  
+    {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+
+
+    }
+     .text {
+        
+     }
+    .circle 
+    {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: $brand;
+    }
+}
